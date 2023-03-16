@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="PlusWeek8HW.css" />
+  </head>
+  <style></style>
+  <body>
+    <div class="dateTime"></div>
+    <div class=".container">
+      <form id="search-form">
+        <input
+          class="searchbox"
+          type="text"
+          placeholder="Search city"
+          autocomplete="off"
+          autofocus="on"
+          id="search-text-input"
+        />
+        <input class="search" type="submit" value="Search" />
+      </form>
+      <h3></h3>
+      <p>Recently searched</p>
+      <button class="currentLoc">Current location</button>
+      <button>Lyon</button>
+      <button>Glasgow</button>
+      <button>Busan</button>
+      <button>Honolulu</button>
+      <button>Montreal</button>
+      <h1>Today in <strong>Manchester</strong> ☀️</h1>
+      <div class="tempandwind">
+        <h2><span id="mainTemp">36</span></h2>
+        <div class="wind">
+          <ul>
+            <li>Wind: <strong id="lblWind">3mph</strong></li>
+            <li>Humidity: <strong id="lblHumidity">30%</strong></li>
+            <li><a href="#" id="cLink" class="active">°C</a> |
+              <a href="#" id="fLink">°F</a></li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <div class="next5days">
+        <span class="boxed" id="box0">
+          Tuesday
+          <br />
+          ☀️
+          <br />
+          36°C
+        </span>
+        <span class="boxed"  id="box1">
+          Wednesday
+          <br />
+          ☀️
+          <br />
+          38°C
+        </span>
+        <span class="boxed"  id="box2">
+          Thursday
+          <br />
+          ☀️
+          <br />
+          40°C
+        </span>
+        <span class="boxed" id="box3">
+          Friday
+          <br />
+          ☀️
+          <br />
+          42°C
+        </span>
+        <span class="boxed" id="box4">
+          Saturday
+          <br />
+          ☀️
+          <br />
+          42°C
+        </span>
+      </div>
+    </div>
+    <script src="PlusWeek8HW.js"></script>
+  </body>
+</html>

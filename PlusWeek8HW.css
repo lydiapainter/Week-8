@@ -1,0 +1,98 @@
+input {
+  margin-top: 25px;
+}
+p {
+  font-family: oxygen;
+  margin: 25px;
+}
+button {
+  margin-left: 25px;
+  padding: 5px 20px;
+  font-family: oxygen;
+  border-radius: 30px;
+  background-color: #ff784f;
+  border: solid 1px;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  border-color: #ff784f;
+  border: solid 1px;
+  color: #ff784f;
+  background-color: white;
+}
+li {
+  list-style-type: none;
+  font-family: Maven Pro;
+  font-weight: 400;
+  position: relative;
+  margin-left: 25px;
+}
+h1 {
+  font-size: 30px;
+  font-family: oxygen;
+  font-weight: lighter;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+h2 {
+  font-size: 50px;
+  font-family: montserrat alternates;
+  font-weight: 900;
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-family: oxygen;
+  font-size: 15px;
+  margin: 25px;
+}
+.searchbox {
+  width: 300px;
+  padding: 5px 10px;
+  margin-left: 25px;
+  border-radius: 30px;
+  font-family: oxygen;
+  border: solid 1px;
+  border-color: #ff784f;
+}
+.search {
+  padding: 5px 15px;
+  font-family: oxygen;
+  border-radius: 30px;
+  background-color: #ff784f;
+  color: white;
+  border: solid 1px;
+  transition: all 200ms ease-in-out;
+  margin-left: 10px;
+}
+.search:hover {
+  cursor: pointer;
+  border-color: #ff784f;
+  border: solid 1px;
+  color: #ff784f;
+  background-color: white;
+}
+.boxed {
+  border: 1px solid #748386;
+  display: inline-block;
+  border-radius: 50px;
+  font-family: Maven Pro;
+  margin-left: 25px;
+  padding: 50px 10px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+.tempandwind h2 {
+  float: left;
+}
+.wind {
+  float: left;
+}
+.next5days {
+  display: block;
+  margin-top: 100px;
+}
