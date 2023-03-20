@@ -22,7 +22,10 @@ let dateTime = document.querySelector(".dateTime");
 dateTime.innerHTML = formatDate();
 
 function search(event) {
-  event.preventDefault();
+  try {//implemented for the currentlocation button.
+    event.preventDefault();
+  } catch { }
+
   let searchInput = document.querySelector("#search-text-input");
 
   let h3 = document.querySelector("h3");
@@ -100,6 +103,13 @@ function showWeather(response) {
   h1.innerHTML = `It is currently ${temperature}°C in ${response.data.name}`;
 }
 
+function displayWeatherCondition(response) {
+  let currentLocation = response.data.name;
+  console.log("current location >>",currentLocation);
+  document.querySelector("#search-text-input").value = currentLocation;
+  search(this);
+}
+
 function showPosition(position) {
   let p = document.querySelector("p");
   let apiKey = "e15ddd1e1139e9ce1b12520a5c0ecfeb";
@@ -144,3 +154,19 @@ let celsiusTemperature = null;
 
 document.querySelector("#fLink").addEventListener("click", displayFahrenheitTemperature);
 document.querySelector("#cLink").addEventListener("click", displayCelsiusTemperature);
+
+/**
+ * this function will replace the text field in the search input and call the search button function
+ * @param {*} event The event caller
+ */
+function searchByLocation(event) {
+  document.querySelector("#search-text-input").value = event.srcElement.innerHTML;
+  search(event);
+}
+
+document.querySelector("#location1").addEventListener("click", searchByLocation);
+document.querySelector("#location2").addEventListener("click", searchByLocation);
+document.querySelector("#location3").addEventListener("click", searchByLocation);
+document.querySelector("#location4").addEventListener("click", searchByLocation);
+document.querySelector("#location5").addEventListener("click", searchByLocation);
+
